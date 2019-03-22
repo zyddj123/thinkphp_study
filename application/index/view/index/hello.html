@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>user</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>uname</td>
+            <td>class_name</td>
+        </tr>
+        {foreach $data as $v}
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.uname}</td>
+            <td>{$v.class_name}</td>
+        </tr>
+        {/foreach}
+        
+    </table>
+    
+</body>
+
+</html>
