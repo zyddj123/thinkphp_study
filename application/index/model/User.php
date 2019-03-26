@@ -11,4 +11,14 @@ class User extends Model
     {
         return $this->hasOne('Banji','id','banji_id');
     }
+
+    public function blog()
+    {
+        return $this->hasMany('Blog')->with('Content');
+    }
+
+    public function comment()
+    {
+        return $this->belongsToMany('Blog','Comment');
+    }
 }
